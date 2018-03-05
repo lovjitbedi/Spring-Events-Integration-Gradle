@@ -8,7 +8,6 @@ import org.springframework.context.ApplicationEventPublisherAware;
  */
 public class CustomPublisher implements ApplicationEventPublisherAware {
 
-
   private ApplicationEventPublisher publisher;
 
   @Override
@@ -20,4 +19,5 @@ public class CustomPublisher implements ApplicationEventPublisherAware {
   public void publish(EmailEvent event){
     publisher.publishEvent(event);
   }
+  
 }

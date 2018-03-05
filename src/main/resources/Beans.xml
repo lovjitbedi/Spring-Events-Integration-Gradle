@@ -14,11 +14,11 @@
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/bootcamp_db" />
+        <property name="url" value="jdbc:mysql://localhost:3306/spring_events_integration" />
         <property name="username" value="root" />
-        <property name="password" value="igdefault" />
+        <property name="password" value="" />
     </bean>
-    <bean name="customContextEvent" class="com.bootcamp.events.CustomContextEvent"/>
+    <bean name="customContextEvent" class="com.bootcamp.events.ContextStartEvent"/>
     <bean name="customStopEvent" class="com.bootcamp.events.ContextStopEvent"/>
     <bean name="emailListener" class="com.bootcamp.events.customEvents.EmailListener"/>
     <bean name="customPublisher" class="com.bootcamp.events.customEvents.CustomPublisher"/>

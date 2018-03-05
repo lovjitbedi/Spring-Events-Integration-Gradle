@@ -13,7 +13,7 @@ public class JdbcDemo {
         new ClassPathXmlApplicationContext("Beans.xml");
 
     PersonDao personDao = (PersonDao) context.getBean("personDao");
-    Person person = new Person(13, "123234","jhnbkl");
+    Person person = new Person(14, "Lovjit","Bedi");
     personDao.insert(person);
   }
 }
